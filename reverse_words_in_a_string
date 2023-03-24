@@ -1,0 +1,10 @@
+# Reverse words in a given String in Python
+
+user_str = "i love python programming language"
+rev = ""
+user_str = user_str.split(" ")
+
+for word in user_str:
+    print(word)
+    rev = word+" "+rev
+print(rev)

@@ -1,0 +1,30 @@
+# Program to check whether a string is Symmetrical and Palindrome
+
+user_str = "amaama"
+rev1 = ""
+rev2 = ""
+final_rev= ""
+l1 = int(len(user_str) / 2)
+
+for ch in user_str:
+    final_rev = ch+final_rev
+
+if len(user_str)%2==0:
+    # print(l1)
+    for i in range(l1-1,-1,-1):
+        rev1 = rev1 + user_str[i]
+    # print(rev1)
+    for i in range(len(user_str)-1,l1-1,-1):
+        rev2 = rev2 + user_str[i]
+    # print(rev2)
+    
+    if (rev1 == rev2 and user_str == final_rev):
+        print("Symmetrical and Palindrome")
+    else:
+        print("Non Symmetrical")
+    
+else:
+    print("Not Symmetrical")
+        
+
+
