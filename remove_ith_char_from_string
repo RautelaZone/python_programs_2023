@@ -1,0 +1,11 @@
+# removing i'th character from string
+
+user_str = "python language"
+index = 3
+split_user_str = user_str.split(" ")
+
+print("String after removing",index,"th character:", end = " ")
+for x in range(len(user_str)):
+    if x == index:
+        continue
+    print(user_str[x], end = "")
